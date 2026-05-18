@@ -1,0 +1,20 @@
+# Ignore all contents of data/ and results/
+data/*
+results/*
+
+# Ignore zipped archives of data/ and results/
+data.zip
+results.zip
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/

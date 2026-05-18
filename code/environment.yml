@@ -1,0 +1,13 @@
+name: GridMaze_mFC_ephys
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - numpy=1.26.*
+  - pandas=2.2.*
+  - networkx=3.3.*
+  - matplotlib=3.9.*
+  - scipy=1.14.*
+  - scikit-learn=1.5.*
+  - jupyterlab=4.2.*
+  - ipykernel=6.29.*
