@@ -40,7 +40,7 @@
 - 🗺️ **Experiment info** – including maze configurations, experiment timelines, etc.
 - 📓 **Lightweight loader package and example notebooks** for getting started
 
-> 📦 **Where does the actual data live?** The recordings are archived on Zenodo ([10.5281/zenodo.7863716](https://doi.org/10.5281/zenodo.7863716), record `20267467`) as two zips: `data.zip` (~73 GB) and an optional `results.zip` (~31 GB, only useful for paper-analysis reproduction). After cloning, run `bash download_data.sh --no-results --no-lfp` to pull the lean default (~52 GB on disk) into `data/`. See [Downloading data](#-downloading-data) for all options.
+> 📦 **Where does the actual data live?** The recordings are archived on Zenodo ([10.5281/zenodo.7863716](https://doi.org/10.5281/zenodo.7863716)) as two zips: `data.zip` (~73 GB) and an optional `results.zip` (~31 GB, only useful for paper-analysis reproduction). After cloning, run `bash download_data.sh --no-results --no-lfp` to pull the lean default (~52 GB on disk) into `data/`. See [Downloading data](#-downloading-data) for all options.
 
 ---
 
