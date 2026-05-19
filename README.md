@@ -59,7 +59,7 @@
 | **Probes** | 6-shank 64-channel Cambridge NeuroTech probes in mFC (prelimbic, anterior cingulate) |
 | **Behavioural task** | Goal-directed navigation on an elevated 7×7 grid maze |
 | **Per session** | spike times + clusters, LFP signal + times, QC'd trajectories, raw bodypart tracking, task trial events |
-| **Dataset size** | ~73 GB unzipped (or ~52 GB without LFP) |
+| **Dataset size** | ~73 GB unzipped (or ~25 GB without LFP & UnitMatch data, recommended) |
 
 ---
 
@@ -117,19 +117,6 @@ bash download_data.sh --no-results --no-lfp --keep-zip
 # full flag reference
 bash download_data.sh --help
 ```
-
-**All flags:**
-
-| Flag | Effect | Default |
-|---|---|---|
-| `--no-results` | Skip `results.zip` (the analysis cache — not needed for data exploration). | download |
-| `--no-lfp` | Skip extracting LFP files (`lfp.signal.npy`, `lfp.times.npy`, `lfp.metrics.htsv`). Saves ~270 MB / session of disk. **Bytes still download** — LFP lives inside `data.zip`. | extract |
-| `--with-unitmatch` | Include the per-session `UnitMatch/` subfolders. Excluded by default since they're only needed for the cross-session unit-matching workflow. **Bytes still download** — `UnitMatch/` lives inside `data.zip`. | skip |
-| `--data-dir <path>` | Where to extract `data/`. | `<repo-root>/data` |
-| `--results-dir <path>` | Where to extract `results/`. | `<repo-root>/results` |
-| `--keep-zip` | Keep the downloaded `.zip` files after extraction (each zip ≈ its extracted size). | delete |
-| `--no-verify` | Skip MD5 verification against the Zenodo API. | verify |
-| `-h, --help` | Print the flag summary and exit. | — |
 
 **Notes:**
 - 🔁 **Resumable.** If the download is interrupted, just re-run the same command — `curl -C -` picks up where it left off.
